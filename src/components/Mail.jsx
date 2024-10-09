@@ -218,7 +218,7 @@ export const Mail = (props) => {
         fontWeight={500}
       >
         <tspan x={-73.26} y={0}>
-          {"Grisbet &amp; Jorge"}
+          {"Grisbet & Jorge"}
         </tspan>
       </text>
     </svg>
