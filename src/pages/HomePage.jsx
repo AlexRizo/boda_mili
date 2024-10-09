@@ -1,4 +1,4 @@
-import { Article, Button, CardImage, FamilyCard, Gift, Mail } from "../components"
+import { Article, Button, CardImage, FamilyCard, Gift, LaMarina, Mail } from "../components"
 
 export const HomePage = () => {
     return (
@@ -48,7 +48,7 @@ export const HomePage = () => {
                             title="PADRES"
                             custom="bg-[#D3D3D3]"
                             woman={{
-                                mother: 'Griselda Monroy Ortiz',
+                                mother: 'Gricelda Monroy Ortiz',
                                 father: 'Norberto Ayala Murgía'
                             }}
                             man={{
@@ -62,7 +62,7 @@ export const HomePage = () => {
                             title="PADRINOS"
                             custom="bg-white"
                             woman={{
-                                mother: 'Griselda Monroy Ortiz',
+                                mother: 'Gricelda Monroy Ortiz',
                                 father: 'Norberto Ayala Murgía'
                             }}
                             man={{
@@ -106,8 +106,8 @@ export const HomePage = () => {
                     <div className="flex flex-col items-center">
                         <p className="text-xl text-[#84847C] font-medium mb-5">Agradecemos su confirmación</p>
                         <div className="flex flex-col xl:flex-row gap-5 xl:gap-14">
-                            <Button text="Asistiré" />
-                            <Button text="No Asistiré" />
+                            <Button text="Asistiré" message="¡Hola!%20Nos%20emociona%20mucho%20acompañarlos%20en%20su%20día%20especial.%20Confirmamos%20que%20sí%20asistiremos%20a%20la%20boda.%20¡Nos%20vemos%20pronto%20para%20celebrar%20juntos!%20🎉" />
+                            <Button text="No Asistiré" message="Hola,%20lamentamos%20mucho%20no%20poder%20asistir%20a%20la%20boda.%20Les%20enviamos%20nuestros%20mejores%20deseos%20en%20este%20día%20tan%20importante%20y%20esperamos%20celebrar%20con%20ustedes%20en%20otra%20ocasión.%20¡Felicidades! 🎉" />
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,10 @@ export const HomePage = () => {
 
                     <div>
                         <p>Si deseas hacernos un obsequio especial, hemos<br className="hidden xl:block"/> dispuesto una mesa de regalos en</p>
-                        <p className="text-6xl mt-8">LA MARINA</p>
-                        <p>Evento MR:2555</p>
+                        <a href="https://www.mesaderegalos.lamarina.com.mx/mesa-de-regalos/evento#Grisbet-y-Jorge/eyJpZEV2ZW50byI6Ik1SLTAwMDAyNTU1IiwiZ3Vlc3QiOnRydWUsImlkQ2x1c3RlciI6NDR9" target="_blank">
+                            <LaMarina className="mx-auto mt-8 mb-4" height={30} />
+                            <p>Evento MR:2555</p>
+                        </a>
                     </div>
 
                     <div className="xl:hidden">
