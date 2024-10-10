@@ -5,7 +5,7 @@ export const HomePage = () => {
         <section className="bg-[#F4F0ED]">
             <div className="h-screen w-full flex items-end justify-center bg-[url('/img/Inicio_GRISBET_DSC_5744.jpg')] bg-cover bg-center xl:bg-top relative">
                 <div className="text-white text-center relative z-10 mb-10 xl:mb-28">
-                    <h1 className="cormorant-garamond text-[100px] leading-[.8] xl:leading-normal xl:text-[120px] font-bold drop-shadow-xl mb-10 xl:m-0">Grisbet & Jorge</h1>
+                    <h1 className="cormorant-garamond text-[85px] leading-[.8] xl:leading-normal xl:text-[120px] font-bold drop-shadow-xl mb-10 xl:m-0">Grisbet & Jorge</h1>
                     <p className="text-xl xl:text-3xl font-light">
                         de una amistad sincera a un amor<br className="xl:hidden"/> duradero, <br/>
                         nos llena de alegría anunciar que vamos<br className="xl:hidden"/> a casarnos.
@@ -86,12 +86,14 @@ export const HomePage = () => {
                         subtitle="Santuario San Juan Pablo II"
                         time="6:00 PM"
                         text="(Turquesa #54, Residencial Esmeralda Nte., 28017, Colima, Col.)"
+                        url="https://maps.app.goo.gl/ykksLQqzRR9KFdw97"
                     />
                     <Article
                         title="Recepción"
                         subtitle='Hacienda "Los Torres"'
                         time="8:00 PM"
                         text="(Melchor Ocampo #14, Centro, 28970, Villa de Álvarez, Col.)"
+                        url="https://maps.app.goo.gl/KB2Li143juR6M477A"
                     />
                 </div>
             </div>
@@ -100,8 +102,10 @@ export const HomePage = () => {
                 <CardImage img="/img/carta-GRISBET_DSC_5778.jpg" rotation="-rotate-12 order-2 xl:order-1" />
                 <div className="flex flex-col justify-center gap-10 xl:gap-36 order-1 xl:order-2">
                     <div>
-                        <Mail className="m-auto xl:hidden" width={288} height={248} />
-                        <Mail className="m-auto hidden xl:block" />
+                        <a href="https://wa.me/523125952679">
+                            <Mail className="m-auto xl:hidden" width={288} height={248} />
+                            <Mail className="m-auto hidden xl:block" />
+                        </a>
                     </div>
                     <div className="flex flex-col items-center">
                         <p className="text-xl text-[#84847C] font-medium mb-5">Agradecemos su confirmación</p>
@@ -124,7 +128,8 @@ export const HomePage = () => {
                     <div>
                         <p>Si deseas hacernos un obsequio especial, hemos<br className="hidden xl:block"/> dispuesto una mesa de regalos en</p>
                         <a href="https://www.mesaderegalos.lamarina.com.mx/mesa-de-regalos/evento#Grisbet-y-Jorge/eyJpZEV2ZW50byI6Ik1SLTAwMDAyNTU1IiwiZ3Vlc3QiOnRydWUsImlkQ2x1c3RlciI6NDR9" target="_blank">
-                            <LaMarina className="mx-auto mt-8 mb-4" height={30} />
+                            <LaMarina className="mx-auto mt-8 mb-4 hidden xl:block" height={30} />
+                            <LaMarina className="mx-auto mt-8 mb-4 xl:hidden" height={20} />
                             <p>Evento MR:2555</p>
                         </a>
                     </div>

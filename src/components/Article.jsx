@@ -1,6 +1,10 @@
-export const Article = ({ title, subtitle, time, text }) => {
+export const Article = ({ title, subtitle, time, text, url }) => {
+    const navigate = () => {
+        if (url) return window.open(url, '_blank');
+    }
+    
     return (
-        <article className="text-center">
+        <article className="text-center" onClick={ navigate }>
             <h1 className="text-2xl font-semibold">{ title }</h1>
             <p className="text-3xl font-light">{ subtitle }</p>
             { time && <p className="text-3xl font-light">{ time }</p> }
