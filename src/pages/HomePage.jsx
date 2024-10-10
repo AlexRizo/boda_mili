@@ -3,7 +3,7 @@ import { Article, Button, CardImage, FamilyCard, Gift, LaMarina, Mail } from "..
 export const HomePage = () => {
     return (
         <section className="bg-[#F4F0ED]">
-            <div className="h-screen w-full flex items-end justify-center bg-[url('/img/Inicio_GRISBET_DSC_5744.jpg')] bg-cover bg-center xl:bg-top relative">
+            <div className="h-screen w-full flex items-end justify-center bg-[url('/img/inicio_GRISBET_DSC_5744.jpg')] bg-cover bg-center xl:bg-top relative">
                 <div className="text-white text-center relative z-10 mb-10 xl:mb-28">
                     <h1 className="cormorant-garamond text-[85px] leading-[.8] xl:leading-normal xl:text-[120px] font-bold drop-shadow-xl mb-10 xl:m-0">Grisbet & Jorge</h1>
                     <p className="text-xl xl:text-3xl font-light">

@@ -4,7 +4,7 @@ export const Article = ({ title, subtitle, time, text, url }) => {
     }
     
     return (
-        <article className="text-center" onClick={ navigate }>
+        <article className="text-center cursor-pointer" onClick={ navigate }>
             <h1 className="text-2xl font-semibold">{ title }</h1>
             <p className="text-3xl font-light">{ subtitle }</p>
             { time && <p className="text-3xl font-light">{ time }</p> }
